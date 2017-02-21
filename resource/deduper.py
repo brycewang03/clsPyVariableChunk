@@ -47,6 +47,7 @@ def find_dedup_library(name='libclsPyVariableChunk', version=None):
         lib_type = '.so'
         if version:
             suffix = lib_type + '.' + version
+        name = './' + name
 
     if not version:
         suffix = lib_type
